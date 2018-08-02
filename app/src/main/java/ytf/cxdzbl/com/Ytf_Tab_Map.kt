@@ -80,7 +80,7 @@ var andm_y:Float? =null
 class Ytf_Tab_Map : Fragment(){
     var myListener =MyLocationListenner()
 
-
+//住码云上更新代码测试
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.ytf__tab__map, container, false)
