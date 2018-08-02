@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ytf_Tab_Map">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+        <Button
+            android:id="@+id/loc_dw"
+            android:layout_marginTop="200dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="定位" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="200dip" />
+
+        <!-- 标注信息的样式 -->
+        <RelativeLayout
+            android:id="@+id/rl_marker"
+            android:layout_above="@id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/shape_corner"
+            android:visibility="visible"
+            android:clickable="true"
+            tools:ignore="UnknownId"><!-- 如果不添加这个属性，当点击布局时，会和地图点击事件干扰 -->
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:textColor="@color/colorHeiSe"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/tv_name"
+                android:textSize="12sp"
+                android:textColor="@color/colorShenHuiSe"/>
+            <TextView
+                android:id="@+id/tv_input"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="100dp"
+                android:layout_below="@id/tv_description"
+                android:textSize="14sp"
+                android:text="点击进入"
+                android:textColor="@color/colorLanSe"/>
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="200dp"
+
+                android:layout_below="@id/tv_description"
+                android:textSize="14sp"
+                android:text="电话:"
+                android:textColor="@color/colorLanSe"/>
+            <TextView
+                android:id="@+id/tv_haoma"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_phone"
+                android:layout_below="@id/tv_description"
+                android:textSize="14sp"
+                android:text=""
+                android:textColor="@color/colorShenHuiSe"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</FrameLayout>

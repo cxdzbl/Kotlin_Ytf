@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorHeiSe">#FF000000</color>
+    <color name="colorShenHuiSe">#FF4B4B4B</color>
+    <color name="colorBaiSe">#ffffff</color>
+    <color name="colorJiangHuangSe">#fc8e33</color>
+    <color name="colorTouMingSe">#00fc3d33</color>
+    <color name="colorLanSe">#6784F0</color>
+    <color name="colorQingHuiSe">#68798B</color>
+    <color name="colorQianHuiSe">#dedede</color>
+
+</resources>
