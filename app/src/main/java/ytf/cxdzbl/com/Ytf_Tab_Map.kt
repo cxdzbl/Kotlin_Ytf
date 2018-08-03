@@ -80,7 +80,6 @@ var andm_y:Float? =null
 class Ytf_Tab_Map : Fragment(){
     var myListener =MyLocationListenner()
     var cxd=5
-    val cxdddddd:String="kdjfkjkfkfjk"
 //住码云上更新代码测试
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
